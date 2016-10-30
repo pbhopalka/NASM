@@ -30,12 +30,14 @@ mov ecx, data
 mov edx, 1
 int 80h
 
+;check if the character is upper case alphabet
 cmp byte[data], 'A'-1
 jng next_alpha
 cmp byte[data], 'Z'+1
 jnl next_alpha
 jmp print
 
+;check if the character is lower case alphabet
 next_alpha:
 cmp byte[data], 'a'-1
 jng next_check
