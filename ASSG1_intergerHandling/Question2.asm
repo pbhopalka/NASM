@@ -1,3 +1,11 @@
+;;;Question take input N and output whether it is even or odd 
+;;;FOr Ex:
+;;; Input: 2
+;;; Output: Even
+;;;Input:3
+;;;Output: Odd
+
+
 Section .data
 prompt: db "Enter a number: "
 length: equ $-prompt
