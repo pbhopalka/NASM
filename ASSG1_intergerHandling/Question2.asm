@@ -32,7 +32,7 @@ int 80h
 
 ;Function for reading input as number
 read_num:
-pusha
+pusha  ;pushes the values of all registers to stack
 
 mov word[num], 0
 
@@ -57,7 +57,7 @@ mov word[num], ax
 jmp loopadd
 
 end_read:
-popa
+popa   ;restores the values of all registers from stack pushed earlier
 
 ret
 
